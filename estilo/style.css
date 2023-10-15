@@ -1,12 +1,17 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,800;1,6..72,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
+
 :root{
     --cor01: #EB0F00;
     --cor02: #B82F25;
     --cor03: #853A35;
     --cor04: #523331;
     --cor05: #332929;
-
+    --font01: 'Newsreader', serif;
+    --font02: 'Playball', cursive;;
 }
 
 *{
@@ -23,6 +28,7 @@ header{
     padding-bottom: 10px;
 }
 header > h1{
+    font-family: var(--font02);
     color: white;
     margin: 0px;
     text-align: center;
@@ -31,11 +37,13 @@ header > nav{
     padding-top: 5px;
 }
 header > nav > p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-left: 15px;
 }
 header > nav > p > a{
     color: white;
     text-decoration: none;
+    font-weight: 600;
     margin-top: 25px;
     padding: 3px 15px;
 }
@@ -46,19 +54,79 @@ header > nav > p > a:hover{
 }
 main{
     background-color: white;
-    width: 95vw;
+    max-width: 80vw;
     height: 95%;
     margin: auto;
+    padding-bottom: 1.73%;
     border-radius: 10px;
+    line-height: 1.2em;
+}
+section > h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--cor05);
+    text-align: center;
+    max-width: 95vh; 
+    /*border-radius: 10px 10px 0px 0px;*/
+    padding: 10px 0px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+section > article > h1, h2, h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: var(--cor05);
+    text-align: center;
+    max-width: 95vh; 
+    /*border-radius: 10px 10px 0px 0px;*/
+    padding: 10px 0px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+section > h4{
+    
+    text-align: center;
+    max-width:200px;
+    margin: 10px auto 30px auto;
+    border-radius: 15px;
+    border-style: dashed;
+    padding: 10px;
+
+}
+section > h4:hover{
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.644);
+}
+section > h4 > a{
+    font-family: var(--font02);
+    font-size: 20px;
+    color: var(--cor05);
+    text-decoration: none;
+}
+section > h4 > a:hover{
+    text-decoration: underline;
+    color: var(--cor02);
+}
+section > p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0px 20px 10px 20px;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    text-indent: 2%;
+    text-align: justify;
 }
 
 footer{
     color: white;
     text-align: center;
+    height: 5%;
     padding: 10px;
     background-color: var(--cor05);
 }
+footer > p {
+    font-family: 'Times New Roman', Times, serif;
+}
 footer > p > a{
+    font-family: var(--font02);
     color: white;
     text-decoration: none;
     margin-top: 25px;
