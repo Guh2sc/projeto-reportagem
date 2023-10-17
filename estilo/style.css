@@ -57,8 +57,8 @@ header > nav > p > a:hover{
 }
 main{
     background-color: white;
-    max-width: 80vw;
-    height: 90%;
+    max-width: 90vw;
+    height: 95%;
     margin: auto;
     padding-bottom: 1.73%;
     border-radius: 10px;
@@ -115,7 +115,7 @@ section > p{
     line-height: 1.5em;
     font-size: 1.1em;
     text-indent: 2%;
-    text-align: justify;
+    text-align: start;
 }
 
 footer{
