@@ -4,6 +4,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playball&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 :root{
     --cor01: #EB0F00;
     --cor02: #B82F25;
@@ -12,6 +14,7 @@
     --cor05: #332929;
     --font01: 'Newsreader', serif;
     --font02: 'Playball', cursive;;
+    --font03: 'Cutive Mono', monospace;
 }
 
 *{
@@ -73,7 +76,7 @@ section > h1, h2, h3{
     margin-bottom: 5px;
 }
 section > article > h1, h2, h3{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: var(--font03);
     font-size: 30px;
     color: var(--cor05);
     text-align: center;
